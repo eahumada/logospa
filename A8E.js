@@ -245,6 +245,7 @@ Module['FS_createPath']('/', 'data', true, true);
     new DataRequest(7260736, 7278032, 0, 0).open('GET', '/data/zone ranger (crash).atr');
     new DataRequest(7278032, 7310944, 0, 0).open('GET', '/data/zorro.atr');
     new DataRequest(7310944, 7444080, 0, 0).open('GET', '/data/logospa.atr');
+    new DataRequest(7444080, 7536256, 0, 0).open('GET', '/data/logo.atr');
               
     function processPackageData(arrayBuffer) {
       Module.finishedDataFileDownloads++;
@@ -385,6 +386,7 @@ Module['FS_createPath']('/', 'data', true, true);
           DataRequest.prototype.requests["/data/zone ranger (crash).atr"].onload();
           DataRequest.prototype.requests["/data/zorro.atr"].onload();
           DataRequest.prototype.requests["/data/logospa.atr"].onload();
+          DataRequest.prototype.requests["/data/logo.atr"].onload();
         
         Module['removeRunDependency']('datafile_A8E.data');
 
