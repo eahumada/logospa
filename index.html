@@ -17,7 +17,14 @@
       div.emscripten { text-align: center; }      
       div.emscripten_border { border: 0px solid black; }
       /* the canvas *must not* have any border or padding, or mouse coords will be wrong */
-      canvas.emscripten { border: 0px none; }
+      canvas.emscripten {
+          border: 0px none; outline: none;
+          tabindex: 0;
+          contentEditable:true;
+          -webkit-user-modify: read-write;
+          -moz-user-modify: read-write;
+          user-modify: read-write;
+      }
 
       #emscripten_logo {
         display: inline-block;
@@ -45,8 +52,7 @@
         
         border-radius: 100%;
         background-color: rgb(189, 215, 46);
-
-display: none;
+        display: none;
       }
 
       @-webkit-keyframes rotation {
@@ -196,7 +202,8 @@ display: none;
           Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
         }
       };
-      Module.setStatus('Downloading...');
+      Module.setStatus('Downloading...');    
+          
     </script>
     <script async="" type="text/javascript" src="A8E.js"></script>
 <span id="controls">
