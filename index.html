@@ -110,9 +110,9 @@ display: none;
 <pre style="text-align: center">Controles: F1 = HELP, F2 = OPTION, F3 = SELECT, F4 = START, F5 = RESET, FLECHAS = direccions de joystick, ALT = disparo.</pre>
 
     <div class="spinner" id="spinner" style="display: none;"></div>
-    <div class="emscripten" id="status"></div>
+    <div class="emscripten" id="status" style="display: none;"></div>
 
-    <div class="emscripten">
+    <div class="emscripten" style="display: none;" >
       <progress value="0" max="0" id="progress" hidden=""></progress>
     </div>
 
@@ -121,7 +121,7 @@ display: none;
       <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" width="800" height="600" style="background-color: black;"></canvas>
     </div>
     
-    <textarea id="output" rows="8">
+    <textarea id="output" rows="4" style="display: none;">
     </textarea>
 
     <script type="text/javascript">
