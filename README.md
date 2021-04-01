@@ -16,19 +16,6 @@ DE :grados
 
 Gira la tortuga "n" grados.
 
-Ejemplo:
-CR MENOS :N
-- 138
-FIN
-
-CR AZUL
-PONNL 1 PONLC 1 82
-HAZ "X -138
-HAZ "Y 31
-PONR 90
-REPITE 90 [SL PONXY LIS :X :Y LA AV 90 HAZ "Y :Y + 1]
-
-
 
 HOW-TO:
 
